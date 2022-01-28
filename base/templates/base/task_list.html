@@ -43,9 +43,23 @@
     </div>
 
     {% empty %}
-    <h3>No items in list</h3>
+
+    <div style="text-align: center; padding-bottom: 10px; line-height: 1em;">
+        <h3>No tasks are created.</h3>
+        <h3>Create a <a style="text-decoration: none; color: #e53935;" href="{% url 'task-create' %}">NEW TASK</a> !
+        </h3>
+    </div>
     {% endfor %}
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div style="text-align: center; padding-bottom: 1px; font-size: 7px; margin-top: 20px;">
+        <h3 style="margin: -10px;">------------------------------------------------------</h3>
+        <h3>Copyright &#169; 2022 Nick Pavlov. All Rights Reserved</h3>
+        <h3>Follow me <a href="https://www.instagram.com/k0li4ka/" target="_blank" class="fa fa-instagram"></a></h3>
+    </div>
+
 </div>
 
 {% endblock content %}
-
